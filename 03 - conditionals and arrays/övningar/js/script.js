@@ -20,3 +20,24 @@ for(let i = 0; i<arr.length; i++){
     // Undantaget är om vi genererar styling utifrån något värde
     pEl.style.backgroundColor = `hsl(${arr[i]}, 80%, 80%)`
 }
+
+
+// Utmaningar - användarnamn
+// OBS det finns smidigare lösningar med array-metoder som vi kommer gå igenom senare i kursen
+
+const importantNames = ['Clara', 'Guido', 'Alrik'];
+const names = ['Signe', 'Noura', 'Alrik', 'Elias', 'Maja', 'Trung', 'Dalya', 'Clara', 'Sergio', 'Bianca', 'Guido', 'Soraya'];
+
+
+for(const name of names){
+    const pEl = document.createElement('p');
+    document.body.appendChild(pEl);
+    pEl.innerText = name;
+    pEl.className = 'notImportant'
+
+    for(const importantName of importantNames){
+        console.log(name, importantName);
+
+        if(importantName === name) pEl.className = 'important';
+    }
+}
