@@ -18,3 +18,18 @@ function addItem(event){
     console.log(item, amount);
     form.reset();
 }
+
+
+// Mousemove
+document.body.addEventListener('mousemove', changeColor);
+
+
+function changeColor(event){
+    // console.log(event.clientX, event.clientY);
+
+    const saturation = (event.clientX/window.innerWidth)*100;
+    const lightness = 100-(event.clientY/window.innerHeight)*100;
+    console.log(lightness)
+    
+    document.body.style.backgroundColor = `hsl(271, ${saturation}%, ${lightness}% )`
+}

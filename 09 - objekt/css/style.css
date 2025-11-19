@@ -1,0 +1,8 @@
+.product-card{
+    border: 2px solid gray;
+   
+}
+
+.line-through{
+    text-decoration: line-through;
+}
