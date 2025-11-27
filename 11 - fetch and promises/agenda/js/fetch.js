@@ -35,4 +35,4 @@ function handleDogMessage(dogObj){
 
 fetch(url)
     .then( handleResponse )
-    .then( handleDogMessage );
+    .then( handleDogMessage ); 
