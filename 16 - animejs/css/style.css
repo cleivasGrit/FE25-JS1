@@ -1,0 +1,20 @@
+#square{
+    width: 200px;
+    aspect-ratio: 1/1;
+    background-color: #00ffff;
+    border-top: 50px solid black;
+}
+
+#container{
+    display: flex;
+    margin-top: 10rem;
+}
+#container h1{
+    font-size: 64px;
+    margin: 1rem;
+}
+
+#keyframe{
+    /* display: inline; */
+    width: fit-content;
+}
