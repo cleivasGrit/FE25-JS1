@@ -1,4 +1,5 @@
 function renderCategories(categories, select) {
+    console.log(categories)
 
     categories.forEach(category  => {
         
