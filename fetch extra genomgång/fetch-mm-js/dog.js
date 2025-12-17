@@ -53,6 +53,7 @@ async function getDogImages(breed, amount){
 
         const value = await response.json();
         return value.message;
+
     }
     catch(error){
         throw error;
